@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Learning Journey</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+
+<body>
+
+    <h1>My Learning Journey</h1>
+
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about/">About Me</a>
+    </nav>
+
+    <!-- Intro card section -->
+    <section class="intro-card">
+        <div class="icon">💡</div>
+        <div class="intro-text">
+            <h2>Welcome to My Learning Journey</h2>
+            <p>
+                This page reflects my learning path in web development.
+                From the basics of HTML and CSS to creating dynamic websites using Django,
+                each topic below marks an important step in understanding how modern web technologies work together
+                to build functional, interactive, and visually appealing web applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- Learning journey table -->
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Topic</th>
+            <th>Description</th>
+        </tr>
+
+        {% for journey in journeys %}
+        <tr>
+            <td>{{ journey.number }}</td>
+            <td>{{ journey.topic }}</td>
+            <td>{{ journey.description }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="3">No learning topics added yet.</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <!-- Admin Proof Section -->
+
+    <section class="admin-proof">
+        <h2>📸 Admin Proof</h2>
+        <p>This section provides proof that I created the models and added data from the Django Admin panel.</p>
+        <div class="proof-container">
+            <div class="proof-item">
+                <img src="{% static 'images/admin_journey.png' %}" alt="Journey Model in Admin">
+                <p class="proof-caption">Journey Admin Proof</p>
+            </div>
+            <div class="proof-item">
+                <img src="{% static 'images/admin_aboutme.png' %}" alt="AboutMe Model in Admin">
+                <p class="proof-caption">About Me Admin Proof</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        © 2025 My Learning Journey | Designed by Cheki
+    </footer>
+
+</body>
+
+</html>

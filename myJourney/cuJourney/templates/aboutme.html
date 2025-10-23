@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a> | 
+        <a href="/about/">About Me</a>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="section-content">
+                <img src="{% static 'images/about.jpg' %}" alt="About Me" class="section-img">
+                {% if about %}
+                <p>
+                    My name is <strong>{{ about.name }}</strong>, and I am from 
+                    <strong>{{ about.place }}</strong>. 
+                    I am currently pursuing <strong>{{ about.education }}</strong> 
+                    at <strong>{{ about.college }}</strong>. 
+                    I am passionate about <em>{{ about.interests }}</em>.
+                </p>
+                {% else %}
+                <p>No personal information has been added yet.</p>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 My Learning Journey | Designed by Cheki
+    </footer>
+
+</body>
+</html>
