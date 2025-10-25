@@ -1,25 +1,35 @@
 {% load static %}
+<!-- Load static tag library to access static files such as CSS and images -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>My Learning Journey</title>
+    
+    <!-- Link external stylesheet from the static folder -->
     <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
 </head>
 
 <body>
 
+    <!-- ===== Page Title ===== -->
     <h1>My Learning Journey</h1>
 
+    <!-- ===== Navigation Bar ===== -->
     <nav>
+        <!-- Navigation links for Home and About Me pages -->
         <a href="/">Home</a> |
         <a href="/about/">About Me</a>
     </nav>
 
-    <!-- Intro card section -->
+    <!-- ===== Introductory Card Section ===== -->
     <section class="intro-card">
-        <div class="icon">💡</div>
+        <!-- Icon representing learning or ideas -->
+        <div class="icon">🎓</div>
+        
+        <!-- Introduction text about the learning journey -->
         <div class="intro-text">
             <h2>Welcome to My Learning Journey</h2>
             <p>
@@ -31,20 +41,25 @@
         </div>
     </section>
 
-    <!-- Learning journey table -->
+    <!-- ===== Learning Journey Table ===== -->
     <table>
         <tr>
+            <!-- Table headers for number, topic, and description -->
             <th>No.</th>
             <th>Topic</th>
             <th>Description</th>
         </tr>
 
+        <!-- Loop through all journey objects passed from the Django view -->
         {% for journey in journeys %}
         <tr>
+            <!-- Display each journey’s number, topic, and description -->
             <td>{{ journey.number }}</td>
             <td>{{ journey.topic }}</td>
             <td>{{ journey.description }}</td>
         </tr>
+
+        <!-- Display this row if there are no journey entries -->
         {% empty %}
         <tr>
             <td colspan="3">No learning topics added yet.</td>
@@ -52,16 +67,21 @@
         {% endfor %}
     </table>
 
-    <!-- Admin Proof Section -->
-
+    <!-- ===== Admin Proof Section ===== -->
     <section class="admin-proof">
         <h2>📸 Admin Proof</h2>
         <p>This section provides proof that I created the models and added data from the Django Admin panel.</p>
+
+        <!-- Container holding the admin proof images -->
         <div class="proof-container">
+
+            <!-- Proof 1: Journey model shown in admin panel -->
             <div class="proof-item">
                 <img src="{% static 'images/admin_journey.png' %}" alt="Journey Model in Admin">
                 <p class="proof-caption">Journey Admin Proof</p>
             </div>
+
+            <!-- Proof 2: About Me model shown in admin panel -->
             <div class="proof-item">
                 <img src="{% static 'images/admin_aboutme.png' %}" alt="AboutMe Model in Admin">
                 <p class="proof-caption">About Me Admin Proof</p>
@@ -69,11 +89,10 @@
         </div>
     </section>
 
-
+    <!-- ===== Footer Section ===== -->
     <footer>
         © 2025 My Learning Journey | Designed by Cheki
     </footer>
 
 </body>
-
 </html>

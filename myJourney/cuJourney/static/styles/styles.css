@@ -1,143 +1,155 @@
-/* 🌿 Global Page Styling */
+/* 🌿 ===================== GLOBAL PAGE STYLING ===================== */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #e0f7fa, #f1f8e9);
-    color: #222;
-    margin: 0;
-    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Clean and modern font */
+    background: linear-gradient(to right, #e0f7fa, #f1f8e9); /* Soft gradient background */
+    color: #222; /* Default text color */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
 }
 
-/* 🌸 Header */
+/*  ===================== HEADER ===================== */
 header {
-    background: linear-gradient(90deg, #0077b6, #023e8a);
-    color: white;
-    text-align: center;
-    padding: 35px 10px;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    border-bottom-left-radius: 20px;
+    background: linear-gradient(90deg, #0077b6, #023e8a); /* Blue gradient header */
+    color: white; /* White header text */
+    text-align: center; /* Center align text */
+    padding: 35px 10px; /* Add space around header */
+    letter-spacing: 1px; /* Slight spacing for readability */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Drop shadow for depth */
+    border-bottom-left-radius: 20px; /* Rounded bottom corners */
     border-bottom-right-radius: 20px;
 }
 
-/* 🌟 Center Main Heading */
+/*  ===================== MAIN HEADING ===================== */
 h1 {
-    text-align: center;
-    font-size: 36px;
-    color: #023e8a;
-    margin: 40px 0 20px 0;
+    text-align: center; /* Center heading */
+    font-size: 36px; /* Large size for importance */
+    color: #023e8a; /* Deep blue color */
+    margin: 40px 0 20px 0; /* Vertical spacing */
     letter-spacing: 1px;
-    font-weight: 700;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
-    transition: transform 0.3s, color 0.3s;
+    font-weight: 700; /* Bold font weight */
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.2); /* Subtle shadow */
+    transition: transform 0.3s, color 0.3s; /* Smooth hover animation */
 }
 
+/* Hover effect for the main heading */
 h1:hover {
-    color: #0077b6;
-    transform: scale(1.05);
+    color: #0077b6; /* Lighter blue when hovered */
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
-/* 🌼 Navigation Bar */
+/* 🌼 ===================== NAVIGATION BAR ===================== */
 nav {
     text-align: center;
-    background-color: #ffffff;
-    padding: 15px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin-bottom: 30px;
+    background-color: #ffffff; /* White background for contrast */
+    padding: 15px 0; /* Vertical padding */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Soft shadow below nav */
+    margin-bottom: 30px; /* Space below nav */
 }
 
+/* Navigation links */
 nav a {
-    color: #023e8a;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: 600;
+    color: #023e8a; /* Default link color */
+    text-decoration: none; /* Remove underlines */
+    margin: 0 20px; /* Space between links */
+    font-weight: 600; /* Semi-bold text */
     font-size: 16px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth hover transition */
 }
 
+/* Hover effect for navigation links */
 nav a:hover {
-    color: #0077b6;
-    text-decoration: underline;
-    transform: scale(1.05);
+    color: #0077b6; /* Lighter blue */
+    text-decoration: underline; /* Add underline */
+    transform: scale(1.05); /* Slight zoom */
 }
 
-/* 💡 Intro Section (Home Page) */
+/*  ===================== INTRO SECTION (HOME PAGE) ===================== */
 .intro-card {
-    display: flex;
+    display: flex; /* Align icon and text side by side */
     align-items: flex-start;
-    gap: 20px;
+    gap: 20px; /* Space between icon and text */
     max-width: 900px;
-    margin: 50px auto;
+    margin: 50px auto; /* Center section horizontally */
     padding: 25px 30px;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255,255,255,0.95); /* Semi-transparent white background */
     border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    border-left: 8px solid #0077b6;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Elevated card effect */
+    border-left: 8px solid #0077b6; /* Decorative left border */
 }
 
+/* Icon styling inside intro section */
 .icon {
     font-size: 48px;
     color: #0077b6;
 }
 
+/* Intro heading text */
 .intro-text h2 {
     color: #023e8a;
     margin-bottom: 10px;
     font-size: 22px;
 }
 
+/* Intro paragraph text */
 .intro-text p {
     color: #333;
-    line-height: 1.6;
+    line-height: 1.6; /* Improve readability */
     font-size: 15px;
 }
 
-/* 📘 Learning Journey Table */
+/* ===================== LEARNING JOURNEY TABLE ===================== */
 table {
-    width: 85%;
-    margin: 60px auto; /* more vertical spacing */
-    border-collapse: collapse;
+    width: 85%; /* Centered, narrower table */
+    margin: 60px auto; /* Add space around */
+    border-collapse: collapse; /* Clean borders */
     background-color: #ffffff;
     border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    overflow: hidden; /* Keep rounded corners visible */
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15); /* Depth shadow */
 }
 
+/* Table cells (headers and data) */
 th, td {
-    border: 1px solid #dee2e6;
+    border: 1px solid #dee2e6; /* Light gray borders */
     padding: 14px;
     text-align: center;
 }
 
+/* Table headers */
 th {
-    background: #0077b6;
-    color: white;
+    background: #0077b6; /* Blue header background */
+    color: white; /* White text for contrast */
     font-weight: bold;
     letter-spacing: 0.5px;
 }
 
+/* Table data cells */
 td {
-    background-color: #e0f7fa;
+    background-color: #e0f7fa; /* Light blue rows */
 }
 
+/* Alternate row coloring */
 tr:nth-child(even) td {
-    background-color: #b2ebf2;
+    background-color: #b2ebf2; /* Slightly darker blue */
 }
 
+/* Hover effect for rows */
 tr:hover td {
-    background-color: #80deea;
+    background-color: #80deea; /* Bright blue on hover */
     transition: 0.3s;
 }
 
-/* 💙 About Me Section */
+/* 💙 ===================== ABOUT ME SECTION ===================== */
 .section {
     max-width: 900px;
-    margin: 60px auto;
+    margin: 60px auto; /* Center and add vertical space */
     background-color: #ffffff;
     padding: 35px;
     border-radius: 18px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
+/* Section title */
 .section h2 {
     text-align: center;
     color: #023e8a;
@@ -145,23 +157,26 @@ tr:hover td {
     font-size: 24px;
 }
 
+/* Flex container for image and text */
 .section-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Make responsive */
 }
 
+/* Circular profile image */
 .section-img {
     width: 220px;
     height: 220px;
-    border-radius: 50%;
+    border-radius: 50%; /* Make image circular */
     object-fit: cover;
-    border: 5px solid #0077b6;
+    border: 5px solid #0077b6; /* Blue border */
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
+/* About Me text styling */
 .section-content p {
     flex: 1;
     line-height: 1.8;
@@ -169,37 +184,39 @@ tr:hover td {
     color: #333;
 }
 
-/* 🌙 Footer */
+/* 🌙 ===================== FOOTER ===================== */
 footer {
-    background: linear-gradient(90deg, #023e8a, #0077b6);
+    background: linear-gradient(90deg, #023e8a, #0077b6); /* Gradient blue footer */
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 50px;
     font-size: 14px;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.1); /* Shadow above footer */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-/* 🖼 Admin Proof Section */
+/* 🖼 ===================== ADMIN PROOF SECTION ===================== */
 .admin-proof {
     text-align: center;
     margin: 60px auto;
-    background-color: #f0f4c3;
+    background-color: #f0f4c3; /* Light yellow background */
     padding: 40px;
     border-radius: 20px;
     max-width: 900px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
+/* Container holding both admin images */
 .admin-proof .proof-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px; /* more space between images */
+    flex-wrap: wrap; /* Make layout responsive */
+    gap: 40px; /* Add space between images */
     justify-content: center;
 }
 
+/* Styling for admin proof images */
 .admin-proof img {
     max-width: 280px;
     border-radius: 12px;
@@ -207,7 +224,8 @@ footer {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Hover effect for images */
 .admin-proof img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom effect */
     box-shadow: 0 12px 30px rgba(0,0,0,0.2);
 }

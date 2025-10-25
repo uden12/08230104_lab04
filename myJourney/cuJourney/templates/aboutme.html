@@ -1,28 +1,41 @@
-{% load static %}
+{% load static %} 
+<!-- Load static files tag to use CSS, images, and JS from the static directory -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
+    
+    <!-- Link to external stylesheet stored in the static folder -->
     <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
 </head>
 <body>
 
+    <!-- ===== Header Section ===== -->
     <header>
-        <h1>About Me</h1>
+        <h1>About Me</h1> <!-- Main page heading -->
     </header>
 
+    <!-- ===== Navigation Bar ===== -->
     <nav>
+        <!-- Links to Home and About Me pages -->
         <a href="/">Home</a> | 
         <a href="/about/">About Me</a>
     </nav>
 
+    <!-- ===== About Section ===== -->
     <section id="about" class="section">
         <div class="container">
-            <h2>About Me</h2>
+            <h2>About Me</h2> <!-- Section title -->
+
             <div class="section-content">
+                <!-- Display image from the static folder -->
                 <img src="{% static 'images/about.jpg' %}" alt="About Me" class="section-img">
+
+                <!-- Check if 'about' context data exists -->
                 {% if about %}
+                <!-- Display user’s personal information dynamically -->
                 <p>
                     My name is <strong>{{ about.name }}</strong>, and I am from 
                     <strong>{{ about.place }}</strong>. 
@@ -31,12 +44,14 @@
                     I am passionate about <em>{{ about.interests }}</em>.
                 </p>
                 {% else %}
+                <!-- Display this message if no data is available -->
                 <p>No personal information has been added yet.</p>
                 {% endif %}
             </div>
         </div>
     </section>
 
+    <!-- ===== Footer Section ===== -->
     <footer>
         © 2025 My Learning Journey | Designed by Cheki
     </footer>
