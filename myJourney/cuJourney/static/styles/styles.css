@@ -1,4 +1,4 @@
-/* 🌿 ===================== GLOBAL PAGE STYLING ===================== */
+/*  GLOBAL PAGE STYLING  */
 body {
     font-family: 'Poppins', sans-serif; /* Clean and modern font */
     background: linear-gradient(to right, #e0f7fa, #f1f8e9); /* Soft gradient background */
@@ -7,7 +7,7 @@ body {
     padding: 0; /* Remove default body padding */
 }
 
-/*  ===================== HEADER ===================== */
+          /*HEADER*/
 header {
     background: linear-gradient(90deg, #0077b6, #023e8a); /* Blue gradient header */
     color: white; /* White header text */
@@ -19,7 +19,7 @@ header {
     border-bottom-right-radius: 20px;
 }
 
-/*  ===================== MAIN HEADING ===================== */
+/*   MAIN HEADING  */
 h1 {
     text-align: center; /* Center heading */
     font-size: 36px; /* Large size for importance */
@@ -37,7 +37,7 @@ h1:hover {
     transform: scale(1.05); /* Slight zoom effect */
 }
 
-/* 🌼 ===================== NAVIGATION BAR ===================== */
+/*  NAVIGATION BAR  */
 nav {
     text-align: center;
     background-color: #ffffff; /* White background for contrast */
@@ -63,7 +63,7 @@ nav a:hover {
     transform: scale(1.05); /* Slight zoom */
 }
 
-/*  ===================== INTRO SECTION (HOME PAGE) ===================== */
+/* INTRO SECTION (HOME PAGE)  */
 .intro-card {
     display: flex; /* Align icon and text side by side */
     align-items: flex-start;
@@ -97,7 +97,7 @@ nav a:hover {
     font-size: 15px;
 }
 
-/* ===================== LEARNING JOURNEY TABLE ===================== */
+/* LEARNING JOURNEY TABLE  */
 table {
     width: 85%; /* Centered, narrower table */
     margin: 60px auto; /* Add space around */
@@ -139,7 +139,7 @@ tr:hover td {
     transition: 0.3s;
 }
 
-/* 💙 ===================== ABOUT ME SECTION ===================== */
+                 /* ABOUT ME SECTION  */
 .section {
     max-width: 900px;
     margin: 60px auto; /* Center and add vertical space */
@@ -157,7 +157,7 @@ tr:hover td {
     font-size: 24px;
 }
 
-/* Flex container for image and text */
+             /* Flex container for image and text */
 .section-content {
     display: flex;
     align-items: center;
@@ -166,7 +166,7 @@ tr:hover td {
     flex-wrap: wrap; /* Make responsive */
 }
 
-/* Circular profile image */
+                  /* Circular profile image */
 .section-img {
     width: 220px;
     height: 220px;
@@ -176,15 +176,15 @@ tr:hover td {
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
-/* About Me text styling */
+              /* About Me text styling */
 .section-content p {
     flex: 1;
     line-height: 1.8;
     font-size: 16px;
-    color: #333;
+    color: #333333;
 }
 
-/* 🌙 ===================== FOOTER ===================== */
+                  /* FOOTER */
 footer {
     background: linear-gradient(90deg, #023e8a, #0077b6); /* Gradient blue footer */
     color: white;
@@ -197,7 +197,7 @@ footer {
     border-top-right-radius: 15px;
 }
 
-/* 🖼 ===================== ADMIN PROOF SECTION ===================== */
+                   /*ADMIN PROOF SECTION*/
 .admin-proof {
     text-align: center;
     margin: 60px auto;
